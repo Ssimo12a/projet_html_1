@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calisthenics Workout</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: linear-gradient(120deg, #000428, #004e92);
+            background-size: 300% 300%;
+            animation: gradientMove 12s ease infinite;
+            color: white;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.974);
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #00c3ff;
+        }
+
+        .section {
+            padding: 60px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+       
+        .watch-btn {
+            display: inline-block;
+            background-color: #00c3ff;
+            color: black;
+            font-weight: bold;
+            padding: 12px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .watch-btn:hover {
+            background-color: #00a1cc;
+            transform: scale(1.5);
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid white;
+            padding: 10px;
+        }
+
+        input, textarea, select {
+            display: block;
+            margin: 10px 0;
+            padding: 8px;
+            width: 320px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            width: 150px;
+            background-color: #00c3ff;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: rgba(0,0,0,0.7);
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        #contact {
+            text-align: center;
+        }
+
+        #workout {
+            width: 50%;
+        }
+
+        #contact form {
+            background-color: #000428;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#workout">Workout</a>
+        <a href="#nutrition">Nutrition</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+  >
+    <div id="home" class="section">
+        <h1>Welcome to Calisthenics Workout</h1>
+        <p style="text-align:center">Discover routines, videos, and tips to improve strength and mobility.</p>
+
+       
+        <div style="text-align:center; margin-top:30px;">
+            <a href="https://youtu.be/RoxKbyst0To?si=yCVpIzlL9SDSBNat" target="_blank" class="watch-btn">
+                Watch Video
+            </a>
+        </div>
+    </div>
+
+   
+    <div id="about" class="section">
+        <h2>About Calisthenics</h2>
+        <p>Calisthenics is a training style based on bodyweight exercises to develop strength, balance, coordination, and mobility.</p>
+        <ul>
+            <li>Core strengthening</li>
+            <li>Full body functional strength</li>
+            <li>Flexibility & mobility</li>
+            <li>Beginner to advanced routines</li>
+        </ul>
+    </div>
+
+    
+    <div id="workout" class="section">
+        <h2>Workout Routine</h2>
+        <table>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+            </tr>
+            <tr>
+                <td>Push-ups</td>
+                <td>3</td>
+                <td>15-20</td>
+            </tr>
+            <tr>
+                <td>Pull-ups</td>
+                <td>3</td>
+                <td>5-10</td>
+            </tr>
+            <tr>
+                <td>Dips</td>
+                <td>3</td>
+                <td>10-15</td>
+            </tr>
+            <tr>
+                <td>Squats</td>
+                <td>3</td>
+                <td>20-25</td>
+            </tr>
+        </table>
+    </div>
+
+    
+    <div id="nutrition" class="section">
+        <h2>Nutrition Tips</h2>
+        <ol>
+            <li>Eat enough protein for muscle recovery</li>
+            <li>Prioritize complex carbs for energy</li>
+            <li>Include fruits and vegetables daily</li>
+            <li>Stay hydrated all day</li>
+        </ol>
+    </div>
+
+   
+    <div id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form method="post" enctype="text/plain">
+            <label>Name:</label>
+            <input type="text" name="name" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <label>Message:</label>
+            <textarea name="message" rows="5" required></textarea>
+
+            <label>Subject:</label>
+            <select name="subject">
+                <option value="Question">Question</option>
+                <option value="Workout plan">Workout Plan</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Calisthenics Workout. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
